@@ -1,23 +1,31 @@
-* {
-    margin: 0;
-    padding: 0;
+@-webkit-keyframes bg-color {
+    0% { background-color: #e74c3c; }
+    20% { background-color: #f1c40f; }
+    40% { background-color: #1abc9c; }
+    60% { background-color: #3498db; }
+    80% { background-color: #9b59b6; }
+    100% { background-color: #e74c3c; }
+}
 
+@keyframes bg-color {
+    0% { background-color: #e74c3c; }
+    20% { background-color: #f1c40f; }
+    40% { background-color: #1abc9c; }
+    60% { background-color: #3498db; }
+    80% { background-color: #9b59b6; }
+    100% { background-color: #e74c3c; }
 }
 
 body {
-    background: url(../img/rock.jpg) center no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-
+    margin: 0;
+    padding: 0;
+	
+    background-color: #e74c3c;
+    animation: bg-color 200s infinite;
+    -webkit-animation: bg-color 6s infinite;
 }
 
 .cont {
-    /*display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items:center;*/
-
     height: 100vh;
     width: 100vw;
 
@@ -32,8 +40,19 @@ body {
 }
 
 p {
-    font-family: 'Wire One', sans-serif;
-    font-size: 100px;
+    font-family: 'Comic Sans MS';
+    font-size: 5vw;
     color: white;
+    transition: 1s ease all;
 
 }
+
+p:hover {
+    font-family: 'Comic Sans MS';
+    font-size: 10vw;
+    color: deeppink;
+    transition: 1s ease all;
+    text-shadow: 7px 7px 6px rgba(21, 255, 255, 1);
+
+}
+
