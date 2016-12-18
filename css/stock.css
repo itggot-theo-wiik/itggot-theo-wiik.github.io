@@ -23,7 +23,7 @@ h1, h2, h3, p {
 }
 
 .container {
-    width: 900px;
+    width: 1000px;
     display: flex;
     flex-direction: column;
     
@@ -54,7 +54,9 @@ h1, h2, h3, p {
 
 .intro {
     height: 70vh;
+    max-height: 350px;
     background-color: ghostwhite;
+    margin-top: 70px;
     
     display: flex;
     flex-direction: column;
@@ -119,7 +121,7 @@ img {
     
 }
 
-@media (max-width: 970px) {
+@media (max-width: 1070px) {
  
     .container {
         width: 100%;
@@ -133,7 +135,7 @@ img {
 }
     
     .download {
-        margin: 20px;
+    margin: 20px;
         
     }
     
