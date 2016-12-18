@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: white;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2, h3, p {
+    font-family: monospace, sans-serif;
+    text-decoration: none;
+    
+}
+
+.img_name {
+    margin-top: 20px;
+}
+
+.container {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    
+    -webkit-box-shadow: 0px 5px 13px 0px rgba(50, 50, 50, 0.8);
+    -moz-box-shadow:    0px 5px 13px 0px rgba(50, 50, 50, 0.8);
+    box-shadow:         0px 5px 13px 0px rgba(50, 50, 50, 0.8);
+    
+}
+
+.header {
+    height: 70px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(50, 50, 50, 0.63);
+    -moz-box-shadow:    0px 3px 10px 0px rgba(50, 50, 50, 0.63);
+    box-shadow:         0px 3px 10px 0px rgba(50, 50, 50, 0.63);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.intro {
+    height: 70vh;
+    background-color: ghostwhite;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.photos {
+    min-height: 20px;
+    padding: 20px;
+    height: auto;
+    background-color: ;
+    border-top: 4px dashed whitesmoke;
+
+}
+
+img {
+    width: 80%
+    
+}
+
+.photo_row {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 40px;
+    
+}
+
+.row1, .row2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row1 {
+    
+}
+
+.row2 {
+    
+}
+
+.download {
+    background-color: lightgreen;
+    color: white;
+    border-radius: 200px;
+    padding: 6px;
+    margin-top: 10px;
+    
+}
+
+.footer {
+    background-color: forestgreen;
+    padding: 50px;
+    
+}
+
+@media (max-width: 970px) {
+ 
+    .container {
+        width: 100%;
+        
+    }
+    
+    .photos {
+    padding: 0px;
+    padding-top: 20px;
+
+}
+    
+    .download {
+        margin: 20px;
+        
+    }
+    
+    .row1, .row2 {
+    width: 100%;
+    }
+    
+    .img {
+        width: 100%;
+        
+    }
+    
+    .photo_row {
+    flex-direction: column;
+    margin: 0px;
+    
+}
+    
+}
