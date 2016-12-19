@@ -12,10 +12,17 @@ body {
     align-items: center;
 }
 
-li, h1, h2, h3, p {
+h1, h2, h3, p {
     font-family: monospace, sans-serif;
     text-decoration: none;
     font-size: 1.8em;
+    
+}
+
+li {
+    font-size: 1.2em;
+    font-family: monospace, sans-serif;
+    
     
 }
 
