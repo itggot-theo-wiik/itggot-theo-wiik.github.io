@@ -143,6 +143,12 @@ img {
 .footer {
     background-color: forestgreen;
     padding: 50px;
+    color: white;
+    
+}
+
+.que {
+    color: ghostwhite;
     
 }
 
