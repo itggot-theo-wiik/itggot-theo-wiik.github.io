@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./css/main.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Moon Storage</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <script language="JavaScript" type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/script.js"></script>
+
+    <header>
+        <a href="index.html">
+            <i class="material-icons icon">arrow_back</i>
+        </a>
+        <h2>Scan</h2>
+
+        <div class="icon_container">
+            <i class="material-icons icon more_vert">more_vert</i>
+        </div>
+    </header>
+
+    <main id="scanner">
+        <div class="scanner" onclick="move()"></div>
+        <a href="inventory.html">
+            <div class="button button_scanned">
+                DONE
+            </div>
+        </a>
+    </main>
+
+
+
+    <div class="upload_container">
+        <div class="upload">
+            <h3>Progress</h3>
+            <!-- <p class="paragraph_with_opacity">
+                38%
+            </p> -->
+            <div class="progress_bar">
+                <div class="progress_bar_achieved" id="myBar"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

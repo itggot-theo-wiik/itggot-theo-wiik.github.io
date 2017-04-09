@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./css/main.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Moon Storage</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <script language="JavaScript" type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/script.js"></script>
+
+    <header>
+        <a href="index.html">
+            <i class="material-icons icon">arrow_back</i>
+        </a>
+        <h2>Recommended</h2>
+
+        <div class="icon_container">
+            <i class="material-icons icon more_vert">more_vert</i>
+        </div>
+    </header>
+
+    <main id=trade_main>
+        <div class="trade">
+            <div class="trade_column">
+                <h3 id="trade_header">Your items</h3>
+                <div class="trade_box"></div>
+                <div class="inventory inv_trade">
+                    <div class="row row_trade">
+                        <div class="inv_img">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="inv_icon">
+                        </div>
+                        <div class="inv_text">
+                            <p>
+                                Name
+                            </p>
+                        </div>
+                        <div class="inv_date" id="inv_header">
+                            <p>
+                                File Size
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="inv_img"><i class="material-icons" id="inv_icon">weekend</i></div>
+                        <div class="inv_text">
+                            <p>
+                                Sofa
+                            </p>
+                        </div>
+                        <div class="inv_date">
+                            <p>
+                                143 GB
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="inv_img"><i class="material-icons" id="inv_icon">laptop_chromebook</i></div>
+                        <div class="inv_text">
+                            <p>
+                                Laptop
+                            </p>
+                        </div>
+                        <div class="inv_date inv_trade_size">
+                            <p>
+                                256 GB
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="inv_img"><i class="material-icons" id="inv_icon">directions_car</i></div>
+                        <div class="inv_text">
+                            <p>
+                                Car
+                            </p>
+                        </div>
+                        <div class="inv_date inv_trade_size">
+                            <p>
+                                502 GB
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <i class="material-icons" id="icon_trade">compare_arrows</i>
+
+            <div class="trade_column">
+                <h3 id="trade_header">John Gren</h3>
+                <div class="trade_box"></div>
+                <div class="inventory inv_trade">
+                    <div class="row row_trade">
+                        <div class="inv_img">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="inv_icon">
+                        </div>
+                        <div class="inv_text">
+                            <p>
+                                Name
+                            </p>
+                        </div>
+                        <div class="inv_date" id="inv_header">
+                            <p>
+                                File Size
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="inv_img"><i class="material-icons" id="inv_icon">child_care</i></div>
+                        <div class="inv_text">
+                            <p>
+                                Child
+                            </p>
+                        </div>
+                        <div class="inv_date">
+                            <p>
+                                299 GB
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="inv_img"><i class="material-icons" id="inv_icon">hot_tub</i></div>
+                        <div class="inv_text">
+                            <p>
+                                Hot tub
+                            </p>
+                        </div>
+                        <div class="inv_date inv_trade_size">
+                            <p>
+                                420 GB
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="inv_img"><i class="material-icons" id="inv_icon">location_city</i></div>
+                        <div class="inv_text">
+                            <p>
+                                City
+                            </p>
+                        </div>
+                        <div class="inv_date inv_trade_size">
+                            <p>
+                                78 TB
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="index.html">
+            <div class="button">
+                <p>
+                    SEND
+                </p>
+            </div>
+        </a>
+    </main>
+
+    <!-- <%= yield %> -->
+</body>
+
+</html>
