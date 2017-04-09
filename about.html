@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./css/main.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Moon Storage</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <script language="JavaScript" type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/script.js"></script>
+
+    <header>
+        <i class="material-icons icon" id="burger" onclick="toggle_shadow(); toggle_leave()">menu</i>
+        <h2>About</h2>
+
+        <div class="icon_container">
+            <i class="material-icons icon more_vert">more_vert</i>
+        </div>
+    </header>
+
+    <!-- NAV START -->
+    <nav>
+        <div class="nav_main">
+            <div class="nav_header">
+
+                <div class="nav_header_img">
+                    <img src="./img/joe_danger_profile.png" class="profile_icon" />
+                </div>
+
+                <div class="nav_header_text">
+                    <!-- <h3>Joe Danger</h3> -->
+                    <p class="white_text">joe.danger@gmail.com</p>
+
+                </div>
+            </div>
+            <div class="nav_list">
+                <ul>
+                    <a href="index.html">
+                        <li class="nav_header1">
+                            <div class="profile_icon2">
+                                <!-- <img src="./img/joe_danger_profile.png" class="profile_icon2" id="nav_icon" /> -->
+                            </div>
+                            <p class="text_opacity_87">joe.danger@gmail.com</p>
+                        </li>
+                    </a>
+                    <a href="index.html">
+                        <li>
+                            <i class="material-icons" id="nav_icon">home</i>
+                            <p class="text_opacity_87">Home</p>
+                        </li>
+                    </a>
+                    <a href="scan.html">
+                        <li><i class="material-icons" id="nav_icon">camera</i>
+                            <p class="text_opacity_87">Scan</p>
+                        </li>
+                    </a>
+                    <a href="intro.html">
+                        <li><i class="material-icons" id="nav_icon">announcement</i>
+                            <p class="text_opacity_87">Introduction</p>
+                        </li>
+                    </a>
+                    <a href="inventory.html">
+                        <li><i class="material-icons" id="nav_icon">assignment</i>
+                            <p class="text_opacity_87">Inventory</p>
+                        </li>
+                    </a>
+                    <a href="recommended.html">
+                        <li><i class="material-icons" id="nav_icon">star</i>
+                            <p class="text_opacity_87">Recommended</p>
+                        </li>
+                    </a>
+                    <a href="trade.html">
+                        <li><i class="material-icons" id="nav_icon">compare_arrows</i>
+                            <p class="text_opacity_87">Trade</p>
+                        </li>
+                    </a>
+                    <a href="about.html">
+                        <li><i class="material-icons" id="nav_icon">help</i>
+                            <p class="text_opacity_87">About us</p>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="nav_leave" onclick="toggle_shadow(); toggle_leave()"></div>
+    </nav>
+    <!-- NAV END -->
+
+    <main id="about">
+        <h1>About us</h1>
+        <p><br />Joe Danger is a side-scrolling video game incorporating elements of racing and platform games, and is the first game developed by Hello Games. The player controls the eponymous daredevil and navigates time-limited courses, aiming to complete
+            enough objectives to continue to further rounds. Joe Danger is presented in a light-hearted way, with emphasis on stunts and maintaining speed. <br /><br />It was released for the PlayStation 3, via the PlayStation Network, in June 2010, after
+            Hello Games originally chose to publish it exclusively with Sony Computer Entertainment. A "Special Edition" for the Xbox 360, via the Xbox Live Arcade, was released on 14 December 2011; an iOS spinoff was released on 10 January 2013. In April
+            2015, a version for Android was released through the Google Play Store.<br /><br /> The game was promoted in the media through interviews with the four members of the development team, in particular with Hello Games's managing director, Sean
+            Murray. The team used their official website and Sony's PlayStation Blog to maintain contact with fans and to keep them up to date on the project's progress. Much of the quality assurance process took the form of public beta testing at exhibitions.<br
+            /><br />On its release, Joe Danger received generally positive reviews; most reviewers praised the accessible gameplay and the ability to edit courses while playing them. Some suggested the game would have benefited from more options, such
+            as sharing and rating user-generated content, and criticised the lack of an online multiplayer mode. Hello Games subsequently released downloadable content to add features that users and reviewers had requested in the months following the
+            game's release. Using leaderboard statistics, Joe Danger was estimated to have sold at least 108,000 units in its first three months on sale. It was nominated for several awards, including the grand prize at the 2010 Independent Games Festival.</p>
+
+        <div class="images">
+            <img src="./img/rocket_old.png" alt="bananpaj1" class="bananpaj">
+            <img src="./img/moon_ground.jpg" alt="bananpaj1" class="bananpaj">
+            <img src="./img/blueprint.jpg" alt="bananpaj1" class="bananpaj">
+            <img src="./img/coder.jpeg" alt="bananpaj1" class="bananpaj">
+            <img src="./img/joe_danger.jpg" alt="bananpaj1" class="bananpaj">
+        </div>
+
+    </main>
+
+    <!-- <%= yield %> -->
+</body>
+
+</html>
