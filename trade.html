@@ -8,6 +8,7 @@
     <title>Moon Storage</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="./img/moon.png">
 </head>
 
 <body>
@@ -29,7 +30,51 @@
         <div class="trade">
             <div class="trade_column">
                 <h3 id="trade_header">Your items</h3>
-                <div class="trade_box"></div>
+                <div class="trade_box">
+                    <div class="inventory inv_trade">
+                        <div class="row onein_box" id="onein_box" onclick="trade_remove(this, this.id)">
+                            <div class="inv_img"><i class="material-icons" id="inv_icon">weekend</i></div>
+                            <div class="inv_text">
+                                <p>
+                                    Sofa
+                                </p>
+                            </div>
+                            <div class="inv_date">
+                                <p>
+                                    143 GB
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row onein_box" id="twoin_box" onclick="trade_remove(this, this.id)">
+                            <div class="inv_img"><i class="material-icons" id="inv_icon">laptop_chromebook</i></div>
+                            <div class="inv_text">
+                                <p>
+                                    Laptop
+                                </p>
+                            </div>
+                            <div class="inv_date inv_trade_size">
+                                <p>
+                                    256 GB
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row onein_box" id="threein_box" onclick="trade_remove(this, this.id)">
+                            <div class="inv_img"><i class="material-icons" id="inv_icon">directions_car</i></div>
+                            <div class="inv_text">
+                                <p>
+                                    Car
+                                </p>
+                            </div>
+                            <div class="inv_date inv_trade_size">
+                                <p>
+                                    502 GB
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="inventory inv_trade">
                     <div class="row row_trade">
                         <div class="inv_img">
@@ -47,8 +92,7 @@
                         </div>
                     </div>
 
-
-                    <div class="row">
+                    <div class="row" id="one" onclick="trade_add(this, this.id)">
                         <div class="inv_img"><i class="material-icons" id="inv_icon">weekend</i></div>
                         <div class="inv_text">
                             <p>
@@ -62,9 +106,7 @@
                         </div>
                     </div>
 
-
-
-                    <div class="row">
+                    <div class="row" id="two" onclick="trade_add(this, this.id)">
                         <div class="inv_img"><i class="material-icons" id="inv_icon">laptop_chromebook</i></div>
                         <div class="inv_text">
                             <p>
@@ -78,9 +120,7 @@
                         </div>
                     </div>
 
-
-
-                    <div class="row">
+                    <div class="row" id="three" onclick="trade_add(this, this.id)">
                         <div class="inv_img"><i class="material-icons" id="inv_icon">directions_car</i></div>
                         <div class="inv_text">
                             <p>
@@ -100,7 +140,55 @@
 
             <div class="trade_column">
                 <h3 id="trade_header">John Gren</h3>
-                <div class="trade_box"></div>
+                <div class="trade_box">
+                    <div class="inventory inv_trade">
+
+                        <div class="row onein_box" id="fourin_box" onclick="trade_remove(this, this.id)">
+                            <div class="inv_img"><i class="material-icons" id="inv_icon">child_care</i></div>
+                            <div class="inv_text">
+                                <p>
+                                    Child
+                                </p>
+                            </div>
+                            <div class="inv_date">
+                                <p>
+                                    299 GB
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row onein_box" id="fivein_box" onclick="trade_remove(this, this.id)">
+                            <div class="inv_img"><i class="material-icons" id="inv_icon">hot_tub</i></div>
+                            <div class="inv_text">
+                                <p>
+                                    Hot tub
+                                </p>
+                            </div>
+                            <div class="inv_date inv_trade_size">
+                                <p>
+                                    420 GB
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row onein_box" id="sixin_box" onclick="trade_remove(this, this.id)">
+                            <div class="inv_img"><i class="material-icons" id="inv_icon">location_city</i></div>
+                            <div class="inv_text">
+                                <p>
+                                    City
+                                </p>
+                            </div>
+                            <div class="inv_date inv_trade_size">
+                                <p>
+                                    78 TB
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="inventory inv_trade">
                     <div class="row row_trade">
                         <div class="inv_img">
@@ -119,7 +207,7 @@
                     </div>
 
 
-                    <div class="row">
+                    <div class="row" id="four" onclick="trade_add(this, this.id)">
                         <div class="inv_img"><i class="material-icons" id="inv_icon">child_care</i></div>
                         <div class="inv_text">
                             <p>
@@ -133,9 +221,7 @@
                         </div>
                     </div>
 
-
-
-                    <div class="row">
+                    <div class="row" id="five" onclick="trade_add(this, this.id)">
                         <div class="inv_img"><i class="material-icons" id="inv_icon">hot_tub</i></div>
                         <div class="inv_text">
                             <p>
@@ -149,9 +235,7 @@
                         </div>
                     </div>
 
-
-
-                    <div class="row">
+                    <div class="row" id="six" onclick="trade_add(this, this.id)">
                         <div class="inv_img"><i class="material-icons" id="inv_icon">location_city</i></div>
                         <div class="inv_text">
                             <p>
@@ -169,7 +253,7 @@
         </div>
 
         <a href="index.html">
-            <div class="button">
+            <div class="button button_trade">
                 <p>
                     SEND
                 </p>

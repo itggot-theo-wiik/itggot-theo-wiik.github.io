@@ -49,9 +49,13 @@ function hider_js() {
 
 }
 
+check = 1
+
 // Loading bar
 function move() {
 
+if (check == 1) {
+    check = check + 1
     var elem = document.getElementById("myBar");
     var width = 1;
     var id = setInterval(frame, 25);
@@ -64,8 +68,27 @@ function move() {
             elem.style.width = width + '%';
         }
         if (width == 100) {
-          element = document.querySelector(".button_scanned");
-          element.classList.add("display_button");
+            element = document.querySelector(".button_scanned");
+            element.classList.add("display_button");
         }
     }
+  }
+}
+
+// Trade
+function trade_add(element, clicked_id) {
+    element.classList.toggle("hider");
+    // console.log(clicked_id);
+    var current = document.querySelector("#" + clicked_id.toString() + "in_box");
+    // console.log(current)
+    current.classList.toggle("visible");
+}
+
+function trade_remove(element, clicked_id) {
+    // console.log(element)
+    element.classList.remove("visible");
+    var current = document.querySelector("#" + clicked_id.replace('in_box', ''));
+    // console.log("temp is")
+    // console.log(current)
+    current.classList.toggle("hider");
 }
