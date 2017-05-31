@@ -5,242 +5,38 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="./css/main.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Moon Storage</title>
+    <link rel="icon" href="./img/">
+    <title>Drinkizer</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="icon" href="./img/moon.png">
-		<!-- Hotjar Tracking Code for pcrepair.cricket -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:519169,hjsv:5};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
 </head>
 
-<body>
+<body onload="bg_color()">
     <script language="JavaScript" type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script> -->
     <script language="JavaScript" type="text/javascript" src="js/script.js"></script>
 
-
-	
     <header>
-        <!-- <img src="./img/ic_menu_white_48px.svg" class="icon" id="burger" onclick="toggle_shadow(); toggle_leave()"> -->
-        <i class="material-icons icon" id="burger" onclick="toggle_shadow(); toggle_leave()">menu</i>
-        <h2>Home</h2>
-
-        <div class="icon_container">
-            <i class="material-icons icon more_vert">more_vert</i>
-        </div>
+        <p>Drinkizer</p>
+        <p>V 0.001</p>
     </header>
 
-    <!-- NAV START -->
-    <nav>
-        <div class="nav_main">
-            <div class="nav_header">
-
-                <div class="nav_header_img">
-                    <img src="./img/joe_danger_profile.png" class="profile_icon" />
-                </div>
-
-                <div class="nav_header_text">
-                    <!-- <h3>Joe Danger</h3> -->
-                    <p class="white_text">joe.danger@gmail.com</p>
-
-                </div>
-            </div>
-            <div class="nav_list">
-                <ul>
-                    <a href="index.html">
-                        <li class="nav_header1">
-                            <div class="profile_icon2">
-                                <!-- <img src="./img/joe_danger_profile.png" class="profile_icon2" id="nav_icon" /> -->
-                            </div>
-                            <p class="text_opacity_87">joe.danger@gmail.com</p>
-                        </li>
-                    </a>
-                    <a href="index.html">
-                        <li>
-                            <i class="material-icons" id="nav_icon">home</i>
-                            <p class="text_opacity_87">Home</p>
-                        </li>
-                    </a>
-                    <a href="scan.html">
-                        <li><i class="material-icons" id="nav_icon">camera</i>
-                            <p class="text_opacity_87">Scan</p>
-                        </li>
-                    </a>
-                    <a href="intro.html">
-                        <li><i class="material-icons" id="nav_icon">announcement</i>
-                            <p class="text_opacity_87">Introduction</p>
-                        </li>
-                    </a>
-                    <a href="inventory.html">
-                        <li><i class="material-icons" id="nav_icon">assignment</i>
-                            <p class="text_opacity_87">Inventory</p>
-                        </li>
-                    </a>
-                    <a href="recommended.html">
-                        <li><i class="material-icons" id="nav_icon">star</i>
-                            <p class="text_opacity_87">Recommended</p>
-                        </li>
-                    </a>
-                    <a href="trade.html">
-                        <li><i class="material-icons" id="nav_icon">compare_arrows</i>
-                            <p class="text_opacity_87">Trade</p>
-                        </li>
-                    </a>
-                    <a href="about.html">
-                        <li><i class="material-icons" id="nav_icon">help</i>
-                            <p class="text_opacity_87">About us</p>
-                        </li>
-                    </a>
-                </ul>
-            </div>
-        </div>
-
-        <div class="nav_leave" onclick="toggle_shadow(); toggle_leave()"></div>
-    </nav>
-    <!-- NAV END -->
-
-    <main id="cards">
-        <div class="cards">
-            <!-- CARD -->
-			<a href="http://pcrepair.cricket/game.html">
-                <div class="card">
-                    <div class="card_text">
-                        <h3>Ice Jumpah!</h3>
-                        <p></p>
-                    </div>
-
-                    <div class="icon_container">
-                        <i class="material-icons" id="icon_thumbnail">games</i>
-                    </div>
-
-                </div>
-            </a>
-            <a href="inventory.html">
-                <div class="card" id="card_storage">
-                    <div class="card_text">
-                        <h3>Storage</h3>
-                        <p class="text_opacity_54">674 GB used out of 1000 GB</p>
-                    </div>
-
-                    <div class="storage">
-                        <div class="storage_bar"></div>
-                    </div>
-
-                </div>
-            </a>
-            <!-- CARD -->
-            <a href="intro.html">
-                <div class="card">
-                    <div class="card_text">
-                        <h3>Introduction</h3>
-                        <p></p>
-                    </div>
-
-                    <div class="icon_container">
-                        <i class="material-icons" id="icon_thumbnail">announcement</i>
-                    </div>
-
-                </div>
-            </a>
-            <!-- CARD -->
-            <a href="inventory.html">
-                <div class="card">
-                    <div class="card_text">
-                        <h3>Inventory</h3>
-                        <p></p>
-                    </div>
-
-                    <div class="icon_container">
-                        <i class="material-icons" id="icon_thumbnail">assignment</i>
-                    </div>
-
-                </div>
-            </a>
-            <!-- CARD -->
-            <a href="recommended.html">
-                <div class="card">
-                    <div class="card_text">
-                        <h3>Recommended</h3>
-                        <p></p>
-                    </div>
-
-                    <div class="icon_container">
-                        <i class="material-icons" id="icon_thumbnail">star</i>
-                    </div>
-
-                </div>
-            </a>
+    <main>
 
 
-            <!-- CARD -->
-            <a href="trade.html">
-                <div class="card">
-                    <div class="card_text">
-                        <h3>Trade</h3>
-                        <p></p>
-                    </div>
-
-                    <div class="icon_container">
-                        <i class="material-icons" id="icon_thumbnail">compare_arrows</i>
-                    </div>
+        <div>
+            <div class="results"></div>
+            <a href="#">
+                <div class="button" onclick="which_drink()" id="button">
+                    <h1>Press Me</h1>
                 </div>
             </a>
         </div>
-        <aside>
-            <div class="aside_text">
-                <h1>Want more space?</h1>
-                <p>
-                    <br />You can easily upgrade to more space. It's cheap and worth every penny. Do it. Please I want money. Ok? Just press on the buttons below. And please take the most expensive one. Ok? Please I promise this is not a scam.
-                </p>
-            </div>
-            <div class="buy">
-                <div class="buy_section">
-
-                    <div id="buy_title">
-                        <h1>2 TB</h1>
-                    </div>
-
-                    <a href="index.html">
-                        <div class="button" id="buy_button">BUY</div>
-                    </a>
-                </div>
-
-                <div class="buy_section">
-
-                    <div id="buy_title">
-                        <h1>10 TB</h1>
-                    </div>
-
-                    <a href="index.html">
-                        <div class="button" id="buy_button">BUY</div>
-                    </a>
-                </div>
-            </div>
-        </aside>
 
     </main>
 
-    <footer>
-        <i class="material-icons icon mail">mail</i>
-        <p>joe.danger@gmail.com</p>
-    </footer>
 
-    <a href="scan.html">
-        <div class="fab">
-            <i class="material-icons icon">add</i>
-        </div>
-    </a>
-
-
-    <!-- <%= yield %> -->
 </body>
 
 </html>
