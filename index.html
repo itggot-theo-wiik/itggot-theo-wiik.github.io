@@ -5,9 +5,10 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="./css/main.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="icon" href="./img/">
+    <link rel="icon" href="./img/coffee_mug.png">
     <title>Drinkizer</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
@@ -24,11 +25,22 @@
 
     <main>
 
+        <div class="info">
+            <a href="#">
+                <p class="slab bold no_highlight" onclick="info()">Vad är detta?</p>
+            </a>
+            <div class="info_text">
+                <p class="slab">Känner du att du har för mycket frihet? Det gjorde vi också, därför skapade vi FikaDags©!<br><br>Med FikaDags©
+                    kan du ta reda på om det är fika, samt vad du ska köpa (alpha). Tryck på knappen nedan för att få reda
+                    på vilken dricka du skall köpa!</p>
+            </div>
+        </div>
 
         <div>
+
             <div class="results"></div>
             <a href="#">
-                <div class="button" onclick="which_drink()" id="button">
+                <div class="button no_highlight" onclick="which_drink()" id="button">
                     <h1 class="text">Press Me</h1>
                 </div>
             </a>

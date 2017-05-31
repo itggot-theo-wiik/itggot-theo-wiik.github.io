@@ -34,3 +34,8 @@ function which_drink() {
     // alert("Du fick drickan: " + drinks[random])
     $('.results').html(drinks[random]);
 }
+
+function info() {
+    element = document.querySelector(".info_text");
+    element.classList.toggle("higher");
+}

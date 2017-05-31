@@ -6,6 +6,11 @@
     text-decoration: none;
 }
 
+.slab {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
+}
+
 main {
     min-height: calc(100vh - 48px);
     width: 100%;
@@ -31,6 +36,26 @@ header p {
     font-size: 1.1em;
     margin-left: 16px;
     margin-right: 16px;
+}
+
+.info {
+    width: 77%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 64px;
+}
+
+.info_text {
+    height: 0px;
+    overflow: hidden;
+    transition: 1s ease;
+}
+
+.bold {
+    font-size: 1.3em;
+    font-weight: 900;
+    text-shadow: 2px 2px 0px rgba(150, 150, 150, 0.84);
 }
 
 #button {
@@ -62,7 +87,7 @@ header p {
     width: calc(100% - 64px);
 }
 
-.button {
+.no_highlight {
     -webkit-user-select: none;
     /* Chrome/Safari */
     -moz-user-select: none;
@@ -104,12 +129,33 @@ header p {
 }
 
 .font_black {
-    color: rgba(0,0,0,0.54);
+    color: rgba(0, 0, 0, 0.54);
 }
 
-@media (min-width: 700px) {
+@media (max-width: 389px) {
+    .higher {
+        height: auto;
+        transition: 1s ease;
+    }
+}
+
+@media (min-width: 390px) {
+    .higher {
+        height: 230px;
+        transition: 1s ease;
+    }
+}
+
+@media (min-width: 604px) {
+    .higher {
+        height: 150px;
+        transition: 1s ease;
+    }
     .button,
     .results {
         width: 250px;
+    }
+    .info_text {
+        margin-bottom: 0px;
     }
 }
